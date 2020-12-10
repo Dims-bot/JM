@@ -4,10 +4,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class ArithmeticExpression {
-    public final static String[] arabic_roman = new String[]
+    public final static String[] arabicRoman = new String[]
             {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
             "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
             "+", "-", "*", "/"};
@@ -15,8 +14,8 @@ public class ArithmeticExpression {
     public static int indexPlusOne(String number) {
 
         int index = 0;
-        for (int i = 0; i < arabic_roman.length; i++) {
-            if (number.equals(arabic_roman[i])) {
+        for (int i = 0; i < arabicRoman.length; i++) {
+            if (number.equals(arabicRoman[i])) {
                 if (i < 10) index = i + 1;
                 else index = i - 9;
                 break;

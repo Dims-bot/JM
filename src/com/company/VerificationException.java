@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.Arrays;
-import java.util.Objects;
 
 public class VerificationException {
 
@@ -14,14 +13,13 @@ public class VerificationException {
             System.exit(0);
         }
 
-
-        if ((Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabic_roman, 0, 10)).contains(expression[0]) &
-                Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabic_roman, 0, 10)).contains(expression[2]) &
-                Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabic_roman, 20, 24)).contains(expression[1]))
+        if ((Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabicRoman, 0, 10)).contains(expression[0]) &
+                Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabicRoman, 0, 10)).contains(expression[2]) &
+                Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabicRoman, 20, 24)).contains(expression[1]))
                 ||
-                (Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabic_roman, 10, 20)).contains(expression[0]) &
-                        Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabic_roman, 10, 20)).contains(expression[2]) &
-                        Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabic_roman, 20, 24)).contains(expression[1])))
+                (Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabicRoman, 10, 20)).contains(expression[0]) &
+                        Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabicRoman, 10, 20)).contains(expression[2]) &
+                        Arrays.asList(Arrays.copyOfRange(ArithmeticExpression.arabicRoman, 20, 24)).contains(expression[1])))
             System.out.print("");
 
         else {System.err.println("Калькулятор принимает на вход одновременно только два целых арвбских или римских числа от 1 до 10 включительно! ");
