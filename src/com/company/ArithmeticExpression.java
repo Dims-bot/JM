@@ -11,10 +11,6 @@ public class ArithmeticExpression {
             {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
             "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
             "+", "-", "*", "/"};
-    //String number;
-
-    //public void setNumber(String number) {
-        //this.number = number;
 
     public static int indexPlusOne(String number) {
 
